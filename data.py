@@ -19,3 +19,4 @@ class Map:
 
     def getMoistureLevels(self) -> str:
         return ' '.join('0' for _ in range(self.size_x * self.size_y))
+

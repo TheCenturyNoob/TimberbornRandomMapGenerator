@@ -1,3 +1,4 @@
+import os
 import zipfile
 from datetime import datetime
 from typing import Dict
@@ -64,10 +65,10 @@ def mapToJson(randomMap: Map) -> Dict:
     return newMap
 
 
-def saveMap(randomMap: Map, filename: str) -> None:
+def saveMap(randomMap: Map, filename: str, targetDirectory: str = '.') -> None:
     mapJson: Dict = mapToJson(randomMap)
     with open('world.json', 'w') as f:
         f.write(str(mapJson).replace('\'', '"'))
-    with zipfile.ZipFile(f'{filename}.timber', 'w') as f:
+    with zipfile.ZipFile(f'{os.path.join(targetDirectory, filename)}.timber', 'w') as f:
         f.write('world.json')
     # os.remove('world.json')
