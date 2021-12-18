@@ -1,0 +1,971 @@
+{
+  "GameVersion": "0.1.1.0-b735201-sw",
+  "Timestamp": "2021-12-18 10:35:04",
+  "Singletons": {
+    "MapSize": {
+      "Size": {
+        "X": 24,
+        "Y": 24
+      }
+    },
+    "TerrainMap": {
+      "Heights": {
+        "Array": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4"
+      }
+    },
+    "CameraStateRestorer": {
+      "SavedCameraState": {
+        "Target": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ZoomLevel": 0.0,
+        "HorizontalAngle": 30.0,
+        "VerticalAngle": 70.0
+      }
+    },
+    "WaterMap": {
+      "WaterDepths": {
+        "Array": "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+      },
+      "Outflows": {
+        "Array": "0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0 0:0:0:0"
+      }
+    },
+    "SoilMoistureSimulator": {
+      "MoistureLevels": {
+        "Array": "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+      }
+    }
+  },
+  "Entities": [
+    {
+      "Id": "acf4e111-5143-4722-998b-baaf265b5036",
+      "Template": "Birch",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 0,
+            "Y": 23,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 1.0
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.136639476,
+            "Y": -0.18442136
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 161.456,
+          "DiameterScale": 1.08206475,
+          "HeightScale": 0.9638705
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 1
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        }
+      }
+    },
+    {
+      "Id": "3e8432ec-c1ee-45b8-890d-f4f615cf239e",
+      "Template": "BlueberryBush",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 2,
+            "Y": 23,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 1.0
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.044103235,
+            "Y": -0.0222214162
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 145.814209,
+          "DiameterScale": 1.136574,
+          "HeightScale": 0.973822832
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "Berries"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        }
+      }
+    },
+    {
+      "Id": "1038dc9a-5228-4c85-ba2c-8e6ae65d4505",
+      "Template": "Pine",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 4,
+            "Y": 23,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 1.0
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": -0.03640631,
+            "Y": 0.07860016
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 320.203064,
+          "DiameterScale": 1.1404705,
+          "HeightScale": 1.01248658
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 2
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "PineResin"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        }
+      }
+    },
+    {
+      "Id": "46131f6c-991a-4686-8564-7fb89f468039",
+      "Template": "Maple",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 6,
+            "Y": 23,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 1.0
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": -0.117750257,
+            "Y": -0.0694386661
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 55.43066,
+          "DiameterScale": 1.18740916,
+          "HeightScale": 0.8799397
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 8
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "MapleSyrup"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        }
+      }
+    },
+    {
+      "Id": "b890aa70-e472-46e1-aee1-e736e58442bc",
+      "Template": "ChestnutTree",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 8,
+            "Y": 23,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 1.0
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.0925300643,
+            "Y": 0.138127923
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 144.18335,
+          "DiameterScale": 0.976644039,
+          "HeightScale": 1.03443432
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 4
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "Chestnut"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        }
+      }
+    },
+    {
+      "Id": "92fbdb0d-1c05-439b-8f88-1cf7f17543d4",
+      "Template": "BlueberryBush",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 2,
+            "Y": 22,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 0.07899666
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.177165627,
+            "Y": -0.02222088
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 89.4778061,
+          "DiameterScale": 1.14276028,
+          "HeightScale": 0.955114365
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "Berries"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        }
+      }
+    },
+    {
+      "Id": "003a949e-91dc-4ea7-bc6d-6db048d32f11",
+      "Template": "Birch",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 0,
+            "Y": 22,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 0.255612135
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.05857572,
+            "Y": 0.175865471
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 152.847778,
+          "DiameterScale": 0.8192896,
+          "HeightScale": 1.12953711
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 1
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        }
+      }
+    },
+    {
+      "Id": "e9a3fed7-8005-4a0c-80e8-932a9e0f6531",
+      "Template": "Pine",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 4,
+            "Y": 22,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 0.0397265553
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": -0.2369923,
+            "Y": 0.162146151
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 81.36921,
+          "DiameterScale": 1.11154187,
+          "HeightScale": 1.081418
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 2
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "PineResin"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        }
+      }
+    },
+    {
+      "Id": "89e747e2-9ddb-4d82-b6cf-9bc46f5302a7",
+      "Template": "Maple",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 6,
+            "Y": 22,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 0.334931433
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.09055709,
+            "Y": -0.199740589
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 190.611191,
+          "DiameterScale": 1.01365471,
+          "HeightScale": 1.12343514
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 8
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "MapleSyrup"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        }
+      }
+    },
+    {
+      "Id": "32119c09-ded7-4e38-b2e6-e30d555c8ea2",
+      "Template": "ChestnutTree",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 8,
+            "Y": 22,
+            "Z": 4
+          }
+        },
+        "Growable": {
+          "GrowthProgress": 0.140001
+        },
+        "CoordinatesOffseter": {
+          "CoordinatesOffset": {
+            "X": 0.1644811,
+            "Y": 0.06342261
+          }
+        },
+        "NaturalResourceModelRandomizer": {
+          "Rotation": 156.298386,
+          "DiameterScale": 0.835245,
+          "HeightScale": 1.183595
+        },
+        "Yielder:Cuttable": {
+          "Yield": {
+            "Good": {
+              "Id": "Log"
+            },
+            "Amount": 4
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        },
+        "LivingNaturalResource": {
+          "IsDead": true
+        },
+        "Yielder:Gatherable": {
+          "Yield": {
+            "Good": {
+              "Id": "Chestnut"
+            },
+            "Amount": 0
+          }
+        },
+        "GatherableYieldGrower": {
+          "GrowthProgress": 0.0
+        }
+      }
+    },
+    {
+      "Id": "ecf2c79e-ae74-419b-b14e-fa01a30a6bad",
+      "Template": "StartingLocation",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 21,
+            "Y": 21,
+            "Z": 4
+          }
+        }
+      }
+    },
+    {
+      "Id": "a5d61682-2d40-40fa-8ca9-b1f3c9d56406",
+      "Template": "Slope",
+      "Components": {
+        "ConstructionSite": {
+          "BuildTimeProgressInHoursKey": 1.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 19,
+            "Y": 23,
+            "Z": 4
+          }
+        },
+        "Constructible": {
+          "Finished": true
+        }
+      }
+    },
+    {
+      "Id": "cfc0a56f-a6b5-4d6f-8350-8fb29dbe1c3c",
+      "Template": "Slope",
+      "Components": {
+        "ConstructionSite": {
+          "BuildTimeProgressInHoursKey": 1.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 19,
+            "Y": 22,
+            "Z": 4
+          },
+          "Orientation": {
+            "Value": "Cw90"
+          }
+        },
+        "Constructible": {
+          "Finished": true
+        }
+      }
+    },
+    {
+      "Id": "872e6af8-31f1-48d8-8519-4cab5356d989",
+      "Template": "Slope",
+      "Components": {
+        "ConstructionSite": {
+          "BuildTimeProgressInHoursKey": 1.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 19,
+            "Y": 21,
+            "Z": 4
+          },
+          "Orientation": {
+            "Value": "Cw180"
+          }
+        },
+        "Constructible": {
+          "Finished": true
+        }
+      }
+    },
+    {
+      "Id": "28a70fed-ddb9-4697-b704-74c9abe440f0",
+      "Template": "Slope",
+      "Components": {
+        "ConstructionSite": {
+          "BuildTimeProgressInHoursKey": 1.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 19,
+            "Y": 20,
+            "Z": 4
+          },
+          "Orientation": {
+            "Value": "Cw270"
+          }
+        },
+        "Constructible": {
+          "Finished": true
+        }
+      }
+    },
+    {
+      "Id": "af32187b-b793-4dea-a845-b67047f727ad",
+      "Template": "WaterSource",
+      "Components": {
+        "WaterSource": {
+          "SpecifiedStrength": 1.0,
+          "CurrentStrength": 1.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 22,
+            "Y": 2,
+            "Z": 3
+          }
+        }
+      }
+    },
+    {
+      "Id": "5a8d8967-2abb-4dfb-b82b-db94546684d4",
+      "Template": "WaterSource",
+      "Components": {
+        "WaterSource": {
+          "SpecifiedStrength": 2.0,
+          "CurrentStrength": 2.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 20,
+            "Y": 2,
+            "Z": 3
+          }
+        }
+      }
+    },
+    {
+      "Id": "fed4234a-bbbe-4672-bafc-f320abd563b3",
+      "Template": "WaterSource",
+      "Components": {
+        "WaterSource": {
+          "SpecifiedStrength": 3.0,
+          "CurrentStrength": 3.0
+        },
+        "BlockObject": {
+          "Coordinates": {
+            "X": 18,
+            "Y": 2,
+            "Z": 3
+          }
+        }
+      }
+    },
+    {
+      "Id": "76b04e43-2165-475c-9c85-eebae80c6079",
+      "Template": "Barrier",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 16,
+            "Y": 2,
+            "Z": 3
+          }
+        }
+      }
+    },
+    {
+      "Id": "23424eda-1f5c-491b-96eb-8a3bb1c1045e",
+      "Template": "Barrier",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 15,
+            "Y": 2,
+            "Z": 3
+          },
+          "Orientation": {
+            "Value": "Cw90"
+          }
+        }
+      }
+    },
+    {
+      "Id": "7a37acf3-444c-42e8-a813-0004bbcf144a",
+      "Template": "Barrier",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 14,
+            "Y": 2,
+            "Z": 3
+          },
+          "Orientation": {
+            "Value": "Cw180"
+          }
+        }
+      }
+    },
+    {
+      "Id": "6fe0f246-34e5-49b4-95cb-da8accaa4f61",
+      "Template": "Barrier",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 13,
+            "Y": 2,
+            "Z": 3
+          },
+          "Orientation": {
+            "Value": "Cw270"
+          }
+        }
+      }
+    },
+    {
+      "Id": "554d3344-3f9c-4f20-950f-3b0854157055",
+      "Template": "UndergroundRuins",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 4,
+            "Y": 3,
+            "Z": 4
+          },
+          "Orientation": {
+            "Value": "Cw270"
+          }
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "8f10e994-482f-41f5-ae05-c86ba0a77789",
+      "Template": "RuinColumnH1",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 0,
+            "Y": 9,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 15
+          }
+        },
+        "RuinModels": {
+          "VariantId": "D"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "fcc68142-9c0a-4504-b6b2-d2442b05f018",
+      "Template": "RuinColumnH2",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 0,
+            "Y": 11,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 30
+          }
+        },
+        "RuinModels": {
+          "VariantId": "E"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "cea52044-f9bd-4cf1-ad07-7a8c62a6b0ed",
+      "Template": "RuinColumnH3",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 0,
+            "Y": 13,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 45
+          }
+        },
+        "RuinModels": {
+          "VariantId": "E"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "5c1a6a93-4bff-412a-bbd7-92ace2a371c3",
+      "Template": "RuinColumnH4",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 0,
+            "Y": 15,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 60
+          }
+        },
+        "RuinModels": {
+          "VariantId": "D"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "1defdea8-58b9-4cbb-a038-92ba76ff0301",
+      "Template": "RuinColumnH5",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 2,
+            "Y": 9,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 75
+          }
+        },
+        "RuinModels": {
+          "VariantId": "D"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "0e2adcbd-afb5-41b8-af74-39873955f7ed",
+      "Template": "RuinColumnH6",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 2,
+            "Y": 11,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 90
+          }
+        },
+        "RuinModels": {
+          "VariantId": "E"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "149954d0-07c9-4f01-af0d-99494562d9a6",
+      "Template": "RuinColumnH7",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 2,
+            "Y": 13,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 105
+          }
+        },
+        "RuinModels": {
+          "VariantId": "A"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    },
+    {
+      "Id": "097e060f-1ab0-4d03-b4f0-840857681002",
+      "Template": "RuinColumnH8",
+      "Components": {
+        "BlockObject": {
+          "Coordinates": {
+            "X": 2,
+            "Y": 15,
+            "Z": 4
+          }
+        },
+        "Yielder:Ruin": {
+          "Yield": {
+            "Good": {
+              "Id": "ScrapMetal"
+            },
+            "Amount": 120
+          }
+        },
+        "RuinModels": {
+          "VariantId": "D"
+        },
+        "DryObject": {
+          "IsDry": true
+        }
+      }
+    }
+  ]
+}
